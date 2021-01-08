@@ -221,21 +221,26 @@ img {
     'aw1 aw2 aw3';
       grid-gap: 1.2rem;
     }
-  //  Grid Area
+
+    //  Grid Area
     .bio-image {
       grid-area: bioimage;
     }
+
     .bio {
       grid-area: bio;
       border-left: 3px solid $main-color;
       padding: 0.8rem;
     }
+
     .award-1 {
       grid-area: aw1;
     }
+
     .award-2 {
       grid-area: aw2;
     }
+
     .award-3 {
       grid-area: aw3;
     }
@@ -248,6 +253,7 @@ img {
     }
 
   }
+
   &-b {
     .progress {
       overflow: hidden;
@@ -264,6 +270,7 @@ img {
       }
     }
   }
+
   //About C
   &-c {
     .about-logos {
@@ -277,7 +284,7 @@ img {
     }
   }
 
-//  About D
+  //  About D
   &-d {
     .testimonials {
       display: grid;
@@ -296,6 +303,7 @@ img {
         border-radius: 5px;
         padding: 0.5rem;
       }
+
       img {
         width: 50px;
         height: 50px;
@@ -304,7 +312,68 @@ img {
       }
     }
   }
+}
 
+//Contact Page
+#contact {
+  &-a {
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+    'name email'
+      'subject phone'
+      'message message';
+      grid-gap: 1.2rem;
+      margin-bottom: 1.2rem;
+
+      //Grid Areas
+      .name-input {
+        grid-area: name;
+      }
+
+      .subject-input {
+        grid-area: subject;
+      }
+
+      .email-input {
+        grid-area: email;
+      }
+
+      .phone-input {
+        grid-area: phone;
+      }
+
+      .message-input {
+        grid-area: message;
+        height: 100px;
+      }
+
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    button[type='submit'] {
+      width: 50%;
+      color: #fff;
+    }
+  }
+
+  &-b {
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+
+  }
+
+  &-c {
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+    }
+  }
 }
 
 //Footer
