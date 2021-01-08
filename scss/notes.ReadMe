@@ -5,3 +5,9 @@ Adding form function on netlify
 3. Add spam filters (this is the i am not a robot type questions):
     on form element add data-netlify-recaptcha="true"
 4. Add this dive in your HTML <div data-netlify-recaptcha="true"></div>
+
+Deploying to Netlify
+
+1. create new site
+2. select from github repo
+3. under Publish directory select t he proper setting if using sass its 'dist'
