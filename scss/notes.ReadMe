@@ -1,0 +1,7 @@
+Adding form function on netlify
+
+1. On form Tag add method="POST" data-netlify="true"
+2. Need name att for each input
+3. Add spam filters (this is the i am not a robot type questions):
+    on form element add data-netlify-recaptcha="true"
+4. Add this dive in your HTML <div data-netlify-recaptcha="true"></div>
